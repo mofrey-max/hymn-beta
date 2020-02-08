@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<ion-app>
+    <ion-menu contentId="content1" side="start">
+        <div class="ion-text-center">
+            <img src="./../../../assets/icon/Heba.png" width="100px" height="100px"/>
+        </div>
+      <ion-content>
+
+       <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/setting" routerDirection="forward">
+          <ion-icon  name="cog" slot="start"></ion-icon>
+            Settings
+          </ion-item>
+       </ion-menu-toggle>
+         
+      <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/help" routerDirection="forward">
+          <ion-icon name="help" slot="start"></ion-icon>
+            Help
+          </ion-item>
+      </ion-menu-toggle>
+
+      <ion-menu-toggle>
+        <ion-item lines="none" routerLink="about" routerDirection="forward">
+        <ion-icon name="information-circle" slot="start"></ion-icon>
+          About
+        </ion-item>
+    </ion-menu-toggle>
+
+       <ion-item-divider class="divi"></ion-item-divider>
+       <ion-item lines="none">
+        <label>
+          Communicate
+        </label>
+       </ion-item>
+       <ion-menu-toggle>
+        <ion-item lines="none" href="mailto:manugodfrey8@gmail.com">
+           <ion-icon  name="mail" slot="start"></ion-icon>
+           manugodfrey@gmail.com
+          </ion-item>
+     </ion-menu-toggle>
+      </ion-content>
+     
+     <ion-row>
+      
+     </ion-row>
+    </ion-menu>
+    <ion-router-outlet id="content1" main></ion-router-outlet>
+  </ion-app>

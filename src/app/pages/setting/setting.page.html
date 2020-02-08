@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+ 
+<ion-item-divider>
+    <ion-buttons slot="start">
+      <p class="bold text-small">Dark Mode</p>
+      <ion-toggle mode="md" color="dark" (ionChange)="onChangeToggle($event)"></ion-toggle>
+    </ion-buttons>
+</ion-item-divider>
+
+<ion-item-divider>
+  <ion-label>Font Size</ion-label>
+</ion-item-divider>
+  <div class="sliderContainer">
+    <input type="range"  name="volume"
+    min="0.8" max="3" class="slider" [ngModel]="fontSize" (input)="onChange($event.target.value)" value = "7" step="0.1"/>
+      
+  </div>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "heba-hymn",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
