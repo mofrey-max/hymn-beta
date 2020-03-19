@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './../../services/data.service';
-
-
+import {DatabaseService} from './../../services/database.service';
 
 
 @Component({
@@ -12,16 +11,15 @@ import { DataService } from './../../services/data.service';
 
 
 export class TabsPage implements OnInit {
-  public searchTerm = "";
+  public searchTerm = '';
   public items: any;
 
 
   public isSearchbarOpened = false;
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private database: DatabaseService ) { }
 
   ngOnInit() {
     this.setFilteredItems();
-
   }
 
   setFilteredItems() {

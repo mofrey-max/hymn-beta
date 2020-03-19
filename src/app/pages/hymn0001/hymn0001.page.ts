@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {DatabaseService} from './../../services/database.service';
+
 
 @Component({
   selector: 'app-hymn0001',
@@ -10,6 +12,11 @@ export class Hymn0001Page implements OnInit {
   constructor() { }
 
   ngOnInit() {
+   /*  this.db.getDatabaseState.subscribe(ready => {
+      if (ready){
+
+      }
+    }) */
   }
 onChange() {
   console.log(this.fontSize);
